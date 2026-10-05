@@ -1,0 +1,63 @@
+{
+    "name": "tyhpdef/symfony-maker-bundle-impl",
+    "description": "Implementation package for tyhpdef/symfony-maker-bundle. Require tyhpdef/symfony-maker-bundle, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "1.67.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/symfony-console": "@dev",
+                "tyhpdef/symfony-config": "@dev",
+                "tyhpdef/symfony-service-contracts": "@dev",
+                "tyhpdef/symfony-string": "@dev",
+                "tyhpdef/symfony-event-dispatcher-contracts": "@dev",
+                "tyhpdef/symfony-translation-contracts": "@dev",
+                "tyhpdef/psr-log": "@dev",
+                "tyhpdef/psr-container": "@dev",
+                "tyhpdef/symfony-event-dispatcher": "@dev",
+                "tyhpdef/php-ext-dom": "@dev",
+                "tyhpdef/psr-event-dispatcher": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/symfony-maker-bundle"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/maker-bundle": "1.67.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/symfony-console": "@dev",
+        "tyhpdef/symfony-config": "@dev",
+        "tyhpdef/symfony-service-contracts": "@dev",
+        "tyhpdef/symfony-string": "@dev",
+        "tyhpdef/symfony-event-dispatcher-contracts": "@dev",
+        "tyhpdef/symfony-translation-contracts": "@dev",
+        "tyhpdef/psr-log": "@dev",
+        "tyhpdef/psr-container": "@dev",
+        "tyhpdef/symfony-event-dispatcher": "@dev",
+        "tyhpdef/php-ext-dom": "@dev",
+        "tyhpdef/psr-event-dispatcher": "@dev"
+    }
+}
